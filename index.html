@@ -1,0 +1,545 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Documentation Eritrean Diaspora Web App documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html#document-index" class="icon icon-home"> Documentation Eritrean Diaspora Web App documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                Version 1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-01_introduction_and_goals">Introduction and Goals</a><ul>
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#relevant-documents">Relevant Documents</a></li> -->
+<li class="toctree-l2"><a class="reference internal" href="index.html#requirements-overview">Requirements Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#quality-goals">Quality Goals</a></li>
+
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-02_architecture_constraints">Architecture Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#technical-constraints-runtime-interface-requirements">Technical Constraints / Runtime Interface Requirements</a></li>
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#conventions">Conventions</a></li> -->
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#organizational-constraints">Organizational Constraints</a></li> -->
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-03_system_scope_and_context">System Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#relevant-regulatory-requirements">Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#software-safety-class">Back-end</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#context-and-external-interfaces-overview">Front-end</a></li>
+</ul>
+</li>
+<!-- <li class="toctree-l1"><a class="reference internal" href="index.html#document-04_solution_strategy">Database</a></li> -->
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-05_test_strategy">Instruction of usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#system-tests">Overview guidline</a></li>
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#integration-tests">Step wise description</a></li> -->
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#unit-tests">Database Back-up</a></li> -->
+</ul>
+</li>
+<!-- <li class="toctree-l1"><a class="reference internal" href="index.html#document-06_building_block_view">Building Block View</a> -->
+  <!-- <ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#soups">SOUPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#database-schemata">Database schemata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#level-1">Level 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#level-2">Level 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#level-3">Level 3</a></li>
+</ul> -->
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-07_runtime_view">Runtime View</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#runtime-scenario-1">Client Scenario </a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#runtime-scenario-2">Admin Scenario</a></li>
+ 
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-08_deployment_view">Deployment View</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#infrastructure-level-1">Deployment on local servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#infrastructure-level-2">Deployment on Aws</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-09_concepts">System Screenshots</a>
+  <!-- <ul> -->
+<!-- <li class="toctree-l2"><a class="reference internal" href="index.html#domain-models">Frontend Screenshots</a></li> -->
+<!-- </ul> -->
+</li>
+<!-- <li class="toctree-l1"><a class="reference internal" href="index.html#document-10_design_decisions">Design Decisions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#decision-topic-suggestions">Decision Topic Suggestions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-11_quality_scenarios">Quality Scenarios</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#quality-tree">Quality Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#evaluation-scenarios">Evaluation Scenarios</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-12_technical_risks">Technical Risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-13_glossary">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-about-arc42">About arc42</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#literature-and-references">Literature and references</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#acknowledgements-and-collaborations">Acknowledgements and collaborations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#collaborators">Collaborators</a></li> -->
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html#document-index">Architecture Documentation Wiki</a>
+        
+      </nav>
+ 
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+ 
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+        
+      <li>Documentation Version 1.0</li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-architecture-documentation-wiki-s-documentation">
+<h1>Welcome to Eritrea Diaspora App documentation!<a class="headerlink" href="#welcome-to-architecture-documentation-wiki-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>We believe we can do it! -> Because we are Eritrean's.</p>
+<div class="toctree-wrapper compound">
+<span id="document-01_introduction_and_goals"></span><div class="section" id="introduction-and-goals">
+<h2>Introduction and Goals<a class="headerlink" href="#introduction-and-goals" title="Permalink to this headline">¶</a></h2>
+<p>This document documents the software requirements and describes how the SCRUM team plans to implement them.
+  Vision presents an ambitious yet achievable blueprint to transform Eritrea in 
+  the long term into an exemplary and leading nation across all aspects.
+  To achieve this vision, we need an integrated picture of society, covering demographic, 
+  social, and economic aspects—a snapshot of the Eritrean population down to the most 
+  granular administrative and geographical levels.Conducting Census is allowing us to 
+  update our understanding of the population and its characteristics. This integrated picture 
+  will provide the insights that will allow us to channel our investments to where they will be 
+  most effective.Registering on this website ensures that you receive important news and announcements related to Eritrea affairs and its Diapora.</p>
+<div class="section" id="requirements-overview">
+<span id="id2"></span><h3>Requirements Overview<a class="headerlink" href="#requirements-overview" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>software requirements</strong> define the system from a blackbox/interfaces perspective. They are split into the following sections:</p>
+<ul class="simple">
+<li><p><strong>User Interfaces</strong> - <a class="reference internal" href="index.html#user-interfaces"><span class="std std-ref">User Interfaces</span></a></p></li>
+<li><p><strong>Technical/Admin Interfaces</strong> - <a class="reference internal" href="index.html#technical-interfaces"><span class="std std-ref">Technical Interface</span></a></p></li>
+ </ul>
+</div>
+<div class="section" id="quality-goals">
+<span id="id5"></span><h3>Quality Goals<a class="headerlink" href="#quality-goals" title="Permalink to this headline">¶</a></h3>
+<p><strong>Why this SYSTEM?.</strong></p>
+<p>
+  People of Eritrea origin living in countries across the globe have enriched their adopted countries in diverse fields. You have made a name for yourselves in public life, economics, industry, business and trade, music and film, medicine, science and technology, academics and arts. Your contributions have earned you both recognition and respect. In many countries you count among the richest and influential families.
+  <p> While many of you have taken on the nationality and citizenship of the countries you are living in, your bonds with your motherland remain strong. The entrenched democratic process in Eritrea remains a source of pride as does the global endorsement of Eritrea as a relaiable and responsible partner for the world community.</p>
+ 
+  
+  <p>a) Create the first-ever Database of the Eritrean Diaspora and its associations/bodies and,</p>
+  <p>b) Facilitate regular exchange of information and news.</p>
+  
+  
+  <p> The endeavor is an offering what we envision to be the most ambitious, unique and comprehensive Eritrea Diaspora Community, with the twin aims of not only informing and educating, but also becoming a catalyst for enriching interactions and exchanges among the Diaspora, by creating a virtual bridge between the expatriate Eritrea community and Eritrea as also between themselves.</p>
+ 
+</div>
+
+</div>
+<span id="document-02_architecture_constraints"></span><div class="section" id="architecture-constraints">
+<h2>Architecture Constraints<a class="headerlink" href="#architecture-constraints" title="Permalink to this headline">¶</a></h2>
+<p><strong>Programming languages.</strong></p>
+<p>The software is developed by those programming languages and frameworks.</p>
+<ul class="sample">
+<li><p>PHP 8</p></li>
+<li><p>HTML</p></li>
+<li><p>JAVASCRIPT</p></li>
+<li><p>CSS</p></li>
+<li><p>LARAVEL FRAMEWORK (its php framework)</p></li>
+<li><p>VUE 3 COMPOSITION API(its java-script framework)</p></li>
+<li><p>MYSQL DATABASE</p></li>
+ 
+
+</ul><p><strong>Software requirements.</strong></p>
+<p>and the software’s that require to run this  system.</p>
+<ul class="sample">
+<li><p>Ubuntu Server</p></li>
+<li><p>Apache 2</p></li>
+<li><p>Composer  for php libraries </p></li>
+<li><p>Node.Js for java-script libraries</p></li>
+ </ul>
+
+
+</ul><p><strong>Database server requirements.</strong></p>
+<p>and the software that require to run is .</p>
+<ul class="sample">
+  <li><p>Mysql Server + Workbench </p> and the is open source  link is here <a class="headerlink" href="https://dev.mysql.com/downloads/mysql/" title="mysql server"> MySQL Community Server </a></li>
+ </ul>
+
+  
+<table class="docutils align-default">
+  <colgroup>
+  <col style="width: 23%" />
+  <col style="width: 77%" />
+  </colgroup>
+  <thead>
+  <tr class="row-odd"><th class="head"><p>Technical
+  Constraints</p></th>
+  <th class="head"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row-even"><td><p><em>Hardware
+  Constraints</em></p></td>
+  <td></td>
+  </tr>
+  <tr class="row-odd"><td><p>Intel Xeon Scalable Processor</p></td>
+  <td><p>Depending on the budget scaling from bronze to platinum</p></td>
+  </tr>
+  <tr class="row-even"><td><p>64GB DDR4 RAM</p></td>
+  <td><p>Maximize performance capability and servers’ computing potential</p></td>
+  </tr>
+  <tr class="row-odd"><td><p>Dual  10^TB Storage</p></td>
+  <td><p>Options of either SSD or HDD with greater than 10TB storage for main and backup storage</p></td>
+  </tr>
+   
+  <tr class="row-odd"><td><p>Gigabit Ethernet</p></td>
+  <td><p>Highspeed gigabit ethernet cables</p></td>
+  </tr>
+  <tr class="row-even"><td><p><em>Software
+  Constraints</em></p></td>
+  <td></td>
+  </tr>
+  <tr class="row-odd"><td><p>MySQL Server Workbench</p></td>
+  <td><p>MySQL Community Server Workbench Version 8.0.31 for Ubuntu Linux</p></td>
+  </tr>
+  <tr class="row-odd"><td><p>Apache HTTP Server</p></td>
+  <td><p>Apache HTTP Server version	2.4.54</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Brave Browser</p></td>
+  <td><p>Version v1.46.144 for Ubuntu Linux</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Node JS</p></td>
+  <td><p>Version 16.19.0 (Gallium) for running the JS Libraries</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Composer</p></td>
+  <td><p>Composer version of v2.5.1 for PHP libraries</p></td>
+  </tr>
+  <tr class="row-even"><td><p><em>Operating
+  System
+  Constraints</em></p></td>
+  <td></td>
+  </tr>
+  <tr class="row-odd"><td><p>Ubuntu Server</p></td>
+  <td><p>Version 22.04 ("Jammy Jellyfish")</p></td>
+  </tr>
+   
+  <tr class="row-even"><td><p><em>Programming
+  Constraints</em></p></td>
+  <td></td>
+  </tr>
+  <tr class="row-odd"><td><p>LARAVEL 9 (PHP)</p></td>
+  <td><p>Lravel 9 with requires a minimum PHP version of 8.0.</p></td>
+  </tr>
+  <tr class="row-even"><td><p>VUE 3 COMPOSITION API (JS)</p></td>
+  <td><p>JS based framework with version of v3.2.45</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Structured Query Language (SQL)</p></td>
+  <td><p>Structured Query Language, abbreviated as SQL is a domain-specific for managing data held in RDBMS</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Cascading Stylesheet(CSS)</p></td>
+  <td><p>Cascading Stylesheet (CSS) of version CSS 3</p></td>
+  </tr>
+  <tr class="row-even"><td><p>HTML</p></td>
+  <td><p>Hyper Text Markup Language of version 5</p></td>
+  </tr>
+  <tr class="row-even"><td><p>Javascript (JS)</p></td>
+  <td><p>Javascript ES2022 that reach the stage 4 verification</p></td>
+  </tr>
+  </tbody>
+  </table> 
+ </div>
+ 
+</div>
+</div>
+ 
+<div class="section" id="relevant-regulatory-requirements">
+<span id="regulatory-requirements"></span><h3>Database Installation<a class="headerlink" href="#relevant-regulatory-requirements" title="Permalink to this headline">¶</a></h3>
+
+<div class="admonition-todo admonition" id="id1">
+  <p class="admonition-title">Mysql server and Workbench Installation </p>
+  <ul class="simple">
+    <li><p>The database installation is simple(Recommended MySQL Community Server). <a href="https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/"><br> Full documentation for mysql server for Ubuntu </a></p></li>
+    <li><p>also install Workbench software for database interface</p></li>
+    </ul>
+  </div>
+</div>
+<div class="section" id="software-safety-class">
+<span id="required-safety-class"></span><h3>Back-end Installation<a class="headerlink" href="#software-safety-class" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Laravel dependencies Installation </p>
+<p> Run on terminal on the root folder of the project composer install this will install all the php dependencies</p>
+<p style="color:blue"> <ul style="color:white ;background-color: #232323 ;list-style-type: none;font-size: .8rem;!important"><li>composer install</li></ul></p>
+<p> First make sure that the .env file is available and check the database name variable then run</p>
+<p style="color:blue"> <ul style="color:white ;background-color: #232323 ;list-style-type: none; font-size: .8rem;!important"><li>php artisan migrate</li></ul></p>
+<p> this will help to create all the table for the system. Then run the below command</p>
+<p style="color:blue"> <ul style="color:white ;background-color: #232323 ;list-style-type: none;  font-size: .8rem;!important"><li>php artisan db:seed</li></ul></p>
+<p>after all the above commands its ready to go </p>
+</div>
+</div>
+<div class="section" id="context-and-external-interfaces-overview">
+<span id="external-interfaces"></span><h3>Front-end Installation<a class="headerlink" href="#context-and-external-interfaces-overview" title="Permalink to this headline">¶</a></h3>
+<!-- <p><strong>Contents.</strong></p> -->
+<div class="admonition-todo admonition" id="id1">
+  <p class="admonition-title">Vue 3 Installation</p>
+  <p>This installation help in order to run the front-end interface's</p>
+  <p>download the Node.js 16 from this link  <a href="https://nodejs.org/download/release/v16.19.0/node-v16.19.0-linux-arm64.tar.gz/">download Node js 16 and install it.</a> and run this command </p>
+  <p style="color:blue"> <ul style="color:white ;background-color: #232323 ;list-style-type: none;font-size: .8rem;!important"><li>node --version</li></ul></p>
+  <p>The above command will help you to see the installed Node js version.</p>
+  <p>Then on the root directory of the project folder run this command.</p>
+  <p style="color:blue"> <ul style="color:white ;background-color: #232323 ;list-style-type: none;font-size: .8rem;!important"><li>npm install</li></ul></p>
+  <p>After all , the dependencies will be installed on the project it's ready to go.</p>
+
+  </div>
+ 
+</div>
+</div>
+  
+ 
+ 
+<div class="section" id="level-1">
+<h3>Steps of Instruction<a class="headerlink" href="#level-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="overview">
+<span id="bb-l1-overview"></span><h4>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h4>
+<p>On the landing page the applicant has an option to create an account. It must be noted that the applicant must have a valid email account in order to create his or her account. Once the applicant enters a valid email address, he or she will receive an access code on his or her email. </p>
+<p>Then the applicant is required to copy the four digits access code and insert it in the verification input page. After completing these steps, the applicant will proceed to request registration page where the applicant is expected to fill in his or her preliminary clear and authentic information or data. Then the applicant has to submit his or her questionnaire by clicking the submit option. </p>
+<p>Subsequently, the data reaches the administrator’s server. Accordingly, the committee responsible for verifying the applicant’s details verifies the preliminary data entered by the applicant and gives either response: </p>
+<p>1.  If the applicant’s request is approved, he or she will receive access code and a link in his/her email.  </p>
+<p>2.  If the applicant’s request is not approved, the applicant will receive “sorry message” in his or her email.  </p>
+<p> Applicant’s whose requests are approved have to use the access code and the link they received on their email and will be able to access the actual questionnaire page and can start filling in their details.  </p>
+<p>Once the questionnaire is filled in correctly the applicant will receive “final success message” on the questionnaire page itself.    </p>
+<div class="figure align-default" id="id7">
+ 
+<p>Document the chosen scenarios using UML sequence, activity or
+communications diagrams. Enumerated lists are sometimes feasible.</p>
+<p>Using object diagrams you can depict snapshots of existing runtime
+objects as well as instantiated relationships. The UML allows to
+distinguish between active and passive objects.</p>
+<div class="section" id="runtime-scenario-1">
+<h3>Runtime Scenario of Client<a class="headerlink" href="#runtime-scenario-1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+  <li><p>Runtime diagram of client (or the citizen that shall take the registration process!)</p></li>
+<img alt="Schematic depiction of scenarios" src="_images/client_system_view.png" />
+<!-- <li><p>Database design and Backup Design</p></li> -->
+
+ 
+</ul>
+</div>
+<div class="section" id="runtime-scenario-2">
+<h3>Runtime Scenario of Admin<a class="headerlink" href="#runtime-scenario-2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Runtime diagram of admin (or the committe of registration of the system process of registration info!)</p></li>
+<img alt="Schematic depiction of scenarios" src="_images/admin_c.png" />
+<li><p>Database design and Backup Design</p></li>
+</ul>
+<img alt="Schematic depiction of scenarios" src="_images/database_design.png" />
+</div>
+<!--  -->
+<!--  -->
+</div>
+<span id="document-08_deployment_view"></span><div class="section" id="deployment-view">
+<h2>Deployment View<a class="headerlink" href="#deployment-view" title="Permalink to this headline">¶</a></h2>
+<p><strong>Deployment on local servers.</strong></p>
+<p>To locally deploy the project in local servers 
+  The Server must be compatible with high specification for handling large data set with higher device specifications. To operate on large data scale having a server that is able to handle different types of scenarios is a mandatory thing to acquire. Thus to have ultimate system efficiency servers with high performance are recommended in this case, from our research the minimum requirements for running the server are as follows.</p>
+<p><strong>1. High-Capacity Servers.</strong></p>
+<p>The ideal properties of a big data server are massive storage, ultra-fast recovery, and high-end analytical capability. So, you need the servers that have the right configuration and capacities to meet all these requirements without any compromise.
+  Volume. As the name suggests, the big data feeds on loads of data that can go up to petabytes. For the uninformed, a single Petabyte is equal to 1,000,000 GB. So, make sure that your server can not only handle this massive amount of data but can also continue working consistently while handling it.
+  Real-Time Analysis. The USP of big data is organizing and structuring a huge volume of diverse and unstructured data and seamlessly adding the latter to the available structured data. So, you would need the servers with very high processing capacities to handle this requirement efficiently without fail.
+  Retrieval capabilities. Big data has big objectives too. For instance, real-time stock trading analysis where even a fraction of seconds matters a lot and can introduce multiple changes. For that, your server should fully support multiple users who are concurrently adding multiple inputs every second.</p>
+<p><strong>2. Sufficient Memory.</strong></p>
+<p>RAM is one of the prime requirements for big data analytics tools and applications. Using RAM instead of storage will significantly accelerate the processing speed and help you to gain more output in relatively less time. It translates to better productivity and quicker time-to-market – the two factors that offer you a competitive edge in the industry. Due to varying requirements in terms of volumes and operations, it is not possible to advice on a typical RAM volume. However, to be on the safer side it is good to go with at least 64GB RAM. The readers are advised to discuss their requirements with the providers to know about the ideal memory requirements for their purpose..</p>
+
+<p><strong>3. Processor.</strong></p>
+<p>The central processing unit (CPU) of a computer chip is the heart of any hosting server When choosing a processor for a working server, keep the following in mind: cost and return (but not cost) known as much as processing speed. There are also two main types of processors: Intel and AMD. Both work and you can choose the best plan for your budget plan. Usually, the performers have a high degree of stiffness and a high return rate, resulting in a complete breakdown. Remember, however, that multi-core processors may work better, but their clock speed is slightly lower than that of a single manufacturer. Each processor has more than 8 cores and a frequency over 3 GHz should be enough for most cores. The suggested processor is from Intel Xeon Scalable series depending on the budget.</p>
+
+<p><strong>4. Sufficient Network Capacity</strong></p>
+<p>You would need to send massive data volumes to the server. Lack of sufficient network capacity can throttle your operations. Be considerate of the fluctuations as well. You wouldn’t regularly be writing huge data volumes, which means that buying high bandwidth plans isn’t a cost-efficient solution for you. So, opt for the bespoke bandwidth solutions that allow you to select the ideal bandwidth to competently fulfill your data transfer requirements.
+  You can choose different bandwidth packages starting from 20 TB and going up to 1000 TB per month. To make things easier you may like to inform your provider about your expected data transfer requirements and ask them about the ideal bandwidth volume. Reputed providers can also offer you unmetered bandwidth for more demanding enterprise clients. Depending upon the volume and frequency of data 1Gbps is the least amount of bandwidth you require for your server.</p>
+
+<p><strong>5. Manpower of operation.</strong></p>
+<p>The needed man power to operate the system relies on the users (all Eritrean diaspora) number of people. Thus to verify large number of requests at a time the central server needs more people to handle the requests at the shortest time possible, The number of people that are estimated for handling minimum are 4 persons per server with computers that are connected to the server on real time scenarios. Also the person assigned to handle this system have to have basic knowledge of the computer fields.</p>
+ 
+</div>
+<div class="section" id="infrastructure-level-2">
+<h3>Deployment on Aws<a class="headerlink" href="#infrastructure-level-2" title="Permalink to this headline">¶</a></h3>
+<p><strong>Contents.</strong></p>
+<p>With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.</p>
+<p><a class="headerlink" href="https://docs.aws.amazon.com/elastic-beanstalk/index.html" title="Documentation for AWS">AWS Elastic Beanstalk</a></p>
+ 
+</div>
+<span id="document-09_concepts"></span><div class="section" id="concepts">
+<h2>System Screenshots<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h2>
+<p><strong>Contents.</strong></p>
+
+<img alt="_images/uml_system_context.png" src="_images/000.png" />
+<img alt="_images/uml_system_context.png" src="_images/111.png" />
+<img alt="_images/uml_system_context.png" src="_images/222.png" />
+<img alt="_images/uml_system_context.png" src="_images/333.png" />
+<img alt="_images/uml_system_context.png" src="_images/444.png" />
+<img alt="_images/uml_system_context.png" src="_images/555.png" />
+<img alt="_images/uml_system_context.png" src="_images/667.png" />
+<img alt="_images/uml_system_context.png" src="_images/1.png" />
+<img alt="_images/uml_system_context.png" src="_images/2.png" />
+<img alt="_images/uml_system_context.png" src="_images/3.png" />
+<img alt="_images/uml_system_context.png" src="_images/4.png" />
+<img alt="_images/uml_system_context.png" src="_images/5.png" />
+<img alt="_images/uml_system_context.png" src="_images/6.png" />
+<img alt="_images/uml_system_context.png" src="_images/7.png" />
+<img alt="_images/uml_system_context.png" src="_images/8.png" />
+<img alt="_images/uml_system_context.png" src="_images/9.png" />
+<img alt="_images/uml_system_context.png" src="_images/10.png" />
+<img alt="_images/uml_system_context.png" src="_images/11.png" />
+<img alt="_images/uml_system_context.png" src="_images/12.png" />
+<img alt="_images/uml_system_context.png" src="_images/13.png" />
+<img alt="_images/uml_system_context.png" src="_images/14.png" />
+<img alt="_images/uml_system_context.png" src="_images/15.png" />
+<img alt="_images/uml_system_context.png" src="_images/16.png" />
+<img alt="_images/uml_system_context.png" src="_images/17.png" />
+<img alt="_images/uml_system_context.png" src="_images/18.png" />
+<img alt="_images/uml_system_context.png" src="_images/19.png" />
+<img alt="_images/uml_system_context.png" src="_images/20.png" />
+<img alt="_images/uml_system_context.png" src="_images/21.png" />
+<img alt="_images/uml_system_context.png" src="_images/22.png" />
+
+ 
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, Eri development
+      
+        <span class="commit">
+          RAN <code>developers</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>
